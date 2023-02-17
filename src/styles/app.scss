@@ -77,13 +77,38 @@ a {
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
+  text-align: center;
+}
+
+%title3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+}
+
+%title2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 137%;
+  text-align: center;
+  margin: 50px 0;
+  text-transform: uppercase;
 }
 
 %subtitle {
   font-size: 18px;
   font-weight: 400;
   line-height: 117%;
+}
 
+%subtitle2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 117%;
+  text-align: center;
+  margin-top: 40px;
 }
 
 %button1 {
@@ -315,10 +340,178 @@ a {
       @extend %button-text;
     }
   }
-
   /*&__cover {}*/
 }
 
+.about-form {}
+.content {
+  @extend %container;
+}
+.about {
+  &__promo {}
+  &__title {
+    @extend %title2;
+  }
+  &__separator {
+    @extend %separator;
+  }
+  &__subtitle {
+    @extend %subtitle2;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__column {
+    max-width: 370px;
+    margin: 110px 0 58px;
+  }
+  &__cover {
+    text-align: center
+  }
+  &__column-title {
+    @extend %title1;
+  }
+  &__column-subtitle {
+    @extend %subtitle2;
+  }
+}
+
+.pricing-form {
+  background: #F5F5F5;
+  padding: 50px 0;
+}
+.content {
+  @extend %container;
+}
+.pricing {}
+
+.pricing-promo {
+  margin-bottom: 59px;
+  &__title {
+    @extend %title2;
+  }
+  &__separator {
+    @extend %separator;
+  }
+  &__subtitle {
+    @extend %subtitle2;
+  }
+}
+
+%basic {
+  background: #333333;
+  color: #F5F5F5;
+  border: #F5F5F5 2px solid;
+  padding: 14px 0;
+}
+
+%space {
+  background: #FFFFFF;
+  color: #86878B;
+  border: #F5F5F5 1px solid;
+  padding: 14px 125px;
+}
+
+.pricing__row {
+  display: flex;
+  justify-content: space-between;
+  height: 540px;
+  align-items: flex-end;
+}
+
+.column {
+  @extend %title1;
+
+  &.column-center {
+    align-self: flex-start;
+    box-shadow: 0 0 10px #86878B;
+  }
+
+  &__basic {
+    @extend %basic;
+  }
+
+  &__price {
+    @extend %basic;
+    font-size: 36px;
+    padding: 30px 0;
+  }
+
+  &__free {
+    @extend %basic;
+    font-weight: 400;
+  }
+
+  &__space {
+    @extend %space;
+    @extend %subtitle;
+  }
+}
+
+.reviews-form {}
+.content {}
+.reviews {}
+.reviews-promo {
+  margin-top: 100px;
+  &__title {
+    @extend %title2;
+
+  }
+  &__separator {
+    @extend %separator;
+  }
+  &__subtitle {
+    @extend %subtitle2;
+  }
+}
+
+.reviews-row {
+  padding: 83px 0 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.reviews-column {
+
+  max-width: 370px;
+  &__text {
+    @extend %subtitle;
+    padding: 37px 20px;
+    background: #E2E2E2;
+    text-align: center;
+    border-radius: 10px;
+  }
+  &__triangle {
+    width: 0px;
+	height: 0px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid #E2E2E2;
+  position: relative;
+  left: 60px;
+  bottom: 2px;
+  }
+
+  &__data {
+    margin-top: 66px;
+    display: flex;
+
+  }
+  &__cover {}
+
+  &__info {
+    margin-left: 30px
+  }
+
+  &__name {
+    @extend %title3;
+    padding: 12px 0;
+    margin-bottom: 15px;
+  }
+  &__function {
+    @extend %subtitle;
+  }
+}
 
 
 
