@@ -12,6 +12,7 @@ a {
 .section-class {
   max-width: 1510px;
   margin: 0 auto;
+  border: 1px solid #F5F5F5;
 }
 
 .header {
@@ -251,6 +252,7 @@ a {
       }
     }
   }
+
   .info__form {
     margin: 45px 50px 45px 50px;
     display: flex;
@@ -266,6 +268,7 @@ a {
       margin-bottom: 33px;
     }
   }
+
   .button-info {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -291,12 +294,14 @@ a {
     display: flex;
     text-align: center;
   }
+
   &__item {
     @extend %tabs;
     text-transform: uppercase;
     flex: 0 1 33.33%;
     padding: 5px 0;
   }
+
   &__item:first-child {
     border: #C6CBCD 1px solid;
     border-bottom: none;
@@ -349,29 +354,37 @@ a {
 }
 .about {
   &__promo {}
+
   &__title {
     @extend %title2;
   }
+
   &__separator {
     @extend %separator;
   }
+
   &__subtitle {
     @extend %subtitle2;
   }
+
   &__row {
     display: flex;
     justify-content: space-between;
   }
+
   &__column {
     max-width: 370px;
     margin: 110px 0 58px;
   }
+
   &__cover {
     text-align: center
   }
+
   &__column-title {
     @extend %title1;
   }
+
   &__column-subtitle {
     @extend %subtitle2;
   }
@@ -381,19 +394,24 @@ a {
   background: #F5F5F5;
   padding: 50px 0;
 }
+
 .content {
   @extend %container;
 }
-.pricing {}
+
+/*.pricing {}*/
 
 .pricing-promo {
   margin-bottom: 59px;
+
   &__title {
     @extend %title2;
   }
+
   &__separator {
     @extend %separator;
   }
+
   &__subtitle {
     @extend %subtitle2;
   }
@@ -449,9 +467,10 @@ a {
   }
 }
 
-.reviews-form {}
+/*.reviews-form {}
 .content {}
-.reviews {}
+.reviews {}*/
+
 .reviews-promo {
   margin-top: 100px;
   &__title {
@@ -474,6 +493,7 @@ a {
 .reviews-column {
 
   max-width: 370px;
+
   &__text {
     @extend %subtitle;
     padding: 37px 20px;
@@ -481,6 +501,7 @@ a {
     text-align: center;
     border-radius: 10px;
   }
+
   &__triangle {
     width: 0px;
 	height: 0px;
@@ -497,7 +518,7 @@ a {
     display: flex;
 
   }
-  &__cover {}
+  /*&__cover {}*/
 
   &__info {
     margin-left: 30px
@@ -513,5 +534,171 @@ a {
   }
 }
 
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.banner_form {
+  position: relative;
+  z-index: 4;
+}
+
+.content {
+  @extend %container;
+}
+
+.banner {
+  position: relative;
+  z-index: 4;
+}
+
+.banner-promo {
+  color: #FFFFFF;
+  margin-top: 50px;
+  padding-bottom: 50px;
+
+  &__title {
+    @extend %title2;
+    padding-top: 100px;
+    font-weight: bolder
+  }
+
+  &__separator {
+    @extend %separator;
+  }
+
+  &__subtitle {
+    @extend %subtitle2;
+    margin-bottom: 73px;
+  }
+
+  &__button {
+    @extend %button1;
+    margin: 0 auto;
+  }
+
+  &__button-text {
+    @extend %button-text;
+  }
+}
+
+.cover-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form {
+  background: #E5E5E5;
+  padding-top: 50px;
+}
+
+.content {
+  @extend %container;
+}
+
+.contact-promo {
+  padding-bottom: 90px;
+
+  &__title {
+    @extend %title2;
+  }
+
+  &__separator {
+    @extend %separator;
+  }
+
+  &__subtitle {
+    @extend %subtitle2;
+  }
+}
+
+.contact {
+  position: relative;
+  padding-bottom: 50px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 571px;
+  }
+
+  &__form-text {
+    background: #E5E5E5;
+    margin-bottom: 50px;
+    @extend %tabs;
+    padding-bottom: 16px;
+    outline: none;
+    border: none;
+    border-bottom: #BDBDBD 1px solid;
+  }
+
+  &__message {
+    position: absolute;
+    top: 251.5px;
+    left: 601px;
+  }
+
+  &__message-text {
+    @extend %tabs;
+    padding-bottom: 192px;
+    outline: none;
+    border: none;
+    border-bottom: #BDBDBD 1px solid;
+    background: #E5E5E5;
+    width: 569px;
+    height: 211px;
+    overflow: hidden;
+  }
+
+  &__button {
+    @extend %button2;
+    max-width: 370px;
+    margin: 0 auto;
+  }
+
+  &__button-text {
+    @extend %button-text;
+  }
+}
+
+.footer {
+  background-color: #000000;
+  max-height: 100%;
+}
+
+/*.container {}*/
+
+.footer-box {
+  padding: 40px 0 27px;
+
+  &__networks {
+    margin: 0 0 32px 481px;
+  }
+
+  &__networks-type {
+    margin-right: 50px;
+  }
+
+  &__networks-type:last-child {
+    margin-right: 0px;
+  }
+
+  &__text {
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
 
 
