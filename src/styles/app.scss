@@ -22,7 +22,6 @@ a {
   .container {
     max-width: 1510px;
     margin: 0 auto;
-
   }
 }
 
@@ -44,6 +43,9 @@ a {
   justify-content: space-between;
   @media (max-width: 767px) {
     height: 58px;
+    background-image: url("../images/burger.png");
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
 
@@ -69,7 +71,6 @@ a {
 .navbar {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
-
 
   .navbar__link {
     display: flex;
@@ -99,7 +100,6 @@ a {
       line-height: 137%;
       margin: 25px 0px;
       width: 114px;
-      border: #BDBDBD 1px solid;
       text-align: center;
       @media (max-width: 767px) {
         display: none;
@@ -196,8 +196,9 @@ a {
   max-width: 1510px;
   height: 951px;
   background:
-    url("../images/image.png"),
-    linear-gradient(rgba(49, 47, 47, 0.5), rgba(0, 0, 0, 0.8));
+    linear-gradient(rgba(49, 47, 47, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../images/image.png");
+
     @media (max-width: 1024px) {
       max-width: 1024px;
     }
@@ -232,6 +233,7 @@ a {
           display: none;
         }
       }
+
       .promo {
         position: absolute;
         top: 433px;
@@ -468,6 +470,7 @@ a {
     margin-top: 30px;
   }
 }
+
 /*.content {}*/
 
 .row {
@@ -690,6 +693,7 @@ a {
   @media (max-width: 767px) {
     margin-bottom: 10px;
   }
+
   &__title {
     @extend %title2;
     @media (max-width: 1024px) {
@@ -806,8 +810,6 @@ a {
 }
 
 
-
-
 /*.reviews-form {}
 .content {}
 .reviews {}*/
@@ -820,14 +822,15 @@ a {
       font-size: 24px;
       margin: 35px 0;
     }
-
   }
+
   &__separator {
     @extend %separator;
     @media (max-width: 1024px) {
       max-width: 142px;
     }
   }
+
   &__subtitle {
     @extend %subtitle2;
     @media (max-width: 1024px) {
@@ -937,6 +940,7 @@ a {
 
 ._ibg {
   position: relative;
+
 }
 
 ._ibg img {
@@ -991,7 +995,6 @@ a {
     margin-bottom: 73px;
     @media (max-width: 1024px) {
       font-size: 14px;
-
     }
   }
 
@@ -1029,7 +1032,6 @@ a {
     height: 847px;
     position: relative;
   }
-
 }
 
 .content {
@@ -1098,6 +1100,7 @@ a {
     position: absolute;
     top: 251.5px;
     left: 601px;
+
     @media (max-width: 1024px) {
       width: 486px;
       position: absolute;
